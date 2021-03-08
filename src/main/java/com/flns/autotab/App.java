@@ -4,8 +4,6 @@ import java.awt.Point;
 
 /**
  * Auto TABBER 
- * Username: admin
- * PW: adminpassword
  */
 public final class App {
     

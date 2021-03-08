@@ -3,10 +3,18 @@ import java.awt.*;
 import java.awt.Component;
 
 import javax.swing.*;
+import javax.swing.plaf.metal.MetalLookAndFeel;
+import javax.swing.plaf.metal.OceanTheme;
 
 public class RunnerGUI {
     public static void executeGUI(Point oldPos) {
         final JFrame mainFrame = new JFrame("MIDItoTAB");
+        try {
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException
+                | UnsupportedLookAndFeelException e) {
+            e.printStackTrace();
+        }
         JPanel mainPanel = new JPanel();
         mainFrame.setSize(600,400);
         mainFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);

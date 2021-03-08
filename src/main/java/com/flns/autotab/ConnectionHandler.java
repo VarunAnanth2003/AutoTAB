@@ -5,7 +5,7 @@ import java.util.HashSet;
 public class ConnectionHandler {
     private static Connection conn = null;
     public static boolean establishConnection() {
-        String url = "jdbc:mysql://tab-database.csgzfxbe495j.us-east-1.rds.amazonaws.com:2003/tab-schema?user=admin&password=adminpassword";
+        String url = "jdbc:mysql://tab-database.csgzfxbe495j.us-east-1.rds.amazonaws.com:2003/tab-schema?user=XXX&password=XXX";
         try {
             conn = DriverManager.getConnection(url);
             if (conn != null) {
